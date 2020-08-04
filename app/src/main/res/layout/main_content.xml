@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="120sp"
+        android:text="Self DRIVE"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="260dp"
+    android:orientation="vertical"
+    android:id="@+id/car_layout"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@id/text_main"
+    android:onClick="clickHandlerForCarLayout">
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:background="@drawable/ic_baseline_directions_car_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/car_button">
+
+    </ImageButton>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:text="Car"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp">
+
+        </TextView>
+    </LinearLayout>
+
+<!--    <View-->
+<!--        android:id="@+id/divider2"-->
+<!--        android:layout_width="3dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@android:color/black" />-->
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/text_main"
+        android:layout_alignLeft="@id/car_layout"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/vertical_divider" />
+
+    <LinearLayout
+        android:id="@+id/bike_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_below="@+id/text_main"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/car_layout"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/bike_button"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_baseline_directions_bike_24">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:text="Bike"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/white"
+    android:paddingTop="16dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Guest !"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_purple"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        />
+<!--    <TextView-->
+<!--        android:id="@+id/textLogIn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Sign Up/login"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@android:color/holo_purple"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        />-->
+</LinearLayout>

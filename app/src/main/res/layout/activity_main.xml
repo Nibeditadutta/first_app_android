@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    android:background="@drawable/road_image"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+        <include layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" ></include>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:id="@+id/navemenuID"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start">
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btn1"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="68dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:background="#9C27B0"-->
+<!--        android:text="Violet"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.502"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/text"-->
+<!--        app:layout_constraintVertical_bias="0.28" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn2"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="68dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:background="#FF3200"-->
+<!--        android:text="RED"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn1"-->
+<!--        app:layout_constraintVertical_bias="0.381" />-->
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

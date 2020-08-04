@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NETrip</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="City">
+        <item>Ghy</item>
+        <item>Jht</item>
+        <item>Tez</item>
+        <item>DIBR</item>
+        <item>MLD</item>
+        <item>TIN</item>
+    </string-array>
+</resources>
